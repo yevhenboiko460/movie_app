@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movieapp/features/home/cubit/home_cubit.dart';
 import 'package:movieapp/features/home/cubit/home_state.dart';
-
 import 'package:movieapp/shared/widgets/app_drawer.dart';
 import 'package:movieapp/shared/widgets/movie_card.dart';
 

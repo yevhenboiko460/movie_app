@@ -63,8 +63,8 @@ class MovieApiService {
     Map<String, dynamic> json, {
     required int fallbackPage,
   }) {
-    final results = (json['results'] ?? [])
-        .map((item) => Movie.fromJson(item))
+    final results = ((json['results'] as List?) ?? [])
+        .map((item) => Movie.fromJson(item as Map<String, dynamic>))
         .toList();
 
     return PagedResponse(
